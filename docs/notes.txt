@@ -1,0 +1,4 @@
+Notes:
+- This kernel uses PS/2 polling (inb from port 0x60) to receive keystrokes.
+- Works well in QEMU. If you prefer interrupt-driven keyboard, we'd need to add PIC remap and IDT.
+- The Makefile's 'iso' target runs grub-mkrescue; ensure grub-pc-bin/grub-common are installed on your system.
